@@ -62,6 +62,7 @@ The application runs in a Python/Jupyter Notebook environment and serves as a wo
 This repository contains the complete implementation and documentation for Coursework 2. The project demonstrates a functional machine learning system based on the research conducted in Coursework 1.
 
 ## Author
-Student Name  
-Course: Artificial Intelligence  
+LMU ID: 23049330
+Name: Rohit Joshi  
+Module Name: Artificial Intelligence  
 Coursework: Coursework 2
