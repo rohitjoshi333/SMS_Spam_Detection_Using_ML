@@ -1,45 +1,67 @@
+
 # SMS Spam Detection Using Machine Learning
 
-This repository contains the initial setup and documentation for an Artificial Intelligence coursework project focused on SMS spam detection using machine learning techniques.
+This project is a working implementation of an SMS spam detection system developed as part of Artificial Intelligence Coursework 2. The project builds upon the research and documentation completed in Coursework 1 and focuses on creating a functional machine learning prototype.
 
 ## Project Overview
-The objective of this project is to develop a supervised machine learning system that can automatically classify SMS messages as **spam** or **ham** (legitimate messages). The project applies classical machine learning algorithms and natural language processing techniques to identify unwanted messages based on textual patterns.
+The goal of this project is to automatically classify SMS messages as either **spam** or **ham (legitimate)** using supervised machine learning techniques. With the increasing number of spam messages containing advertisements, phishing links, and scams, automated spam detection has become an important real-world application of machine learning.
 
-## Problem Domain
-With the increasing use of mobile communication, spam messages have become a common issue. These messages often contain advertisements, phishing links, or fraudulent content. Manual filtering is inefficient, making automated spam detection a practical and necessary solution.
+This system uses Natural Language Processing (NLP) techniques to convert SMS text into numerical features and applies multiple classification algorithms to detect spam messages.
 
 ## Dataset
-The project uses an SMS spam dataset obtained from GeeksforGeeks, which contains labeled SMS messages for supervised classification. The dataset includes real-world messages categorized as spam or ham.
+The dataset used in this project is an SMS spam dataset obtained from **GeeksforGeeks**. It contains real SMS messages labeled as spam or ham.
 
-## Machine Learning Approach
-This project focuses on supervised classification using the following algorithms:
+- Total messages: 5,574
+- Classes: Spam and Ham
+- Type: Supervised classification dataset
+
+## Exploratory Data Analysis (EDA)
+Before training the models, exploratory data analysis was performed to better understand the dataset. The following visualizations are included:
+- Bar plot showing class distribution (spam vs ham)
+- Histogram of SMS message lengths
+- Boxplot to identify outliers in message length
+- Scatter plot showing relationship between message length and class label
+- Correlation heatmap using derived numeric features
+
+These visualizations help in understanding class imbalance and feature behavior.
+
+## Machine Learning Algorithms Used
+The following supervised learning algorithms were implemented and compared:
 - Multinomial Naive Bayes
 - Logistic Regression
-- Decision Tree
+- Decision Tree Classifier
 
-Text data will be converted into numerical features using TF-IDF vectorization before training the models.
+TF-IDF vectorization with unigram and bigram features is used to convert SMS text into numerical form.
 
 ## Evaluation Metrics
-The performance of each model will be evaluated using:
+Each model is evaluated using standard classification metrics:
 - Accuracy
 - Precision
 - Recall
-- F1-score
+- F1-Score
 - Confusion Matrix
 
-## Project Status
-This repository currently contains only project documentation. Source code, experiments, and results will be added in later stages as the project progresses.
+The results are compared to identify the best-performing model.
+
+## Application Functionality
+The final system allows users to:
+- Input an SMS message
+- Receive a prediction indicating whether the message is spam or ham
+
+The application runs in a Python/Jupyter Notebook environment and serves as a working AI prototype.
 
 ## Tools and Technologies
 - Python
-- Pandas
+- Pandas, NumPy
 - Scikit-learn
-- Matplotlib
+- Matplotlib, Seaborn
 - Jupyter Notebook
+- GitHub
+
+## Project Status
+This repository contains the complete implementation and documentation for Coursework 2. The project demonstrates a functional machine learning system based on the research conducted in Coursework 1.
 
 ## Author
-ROHIT JOSHI  
+Student Name  
 Course: Artificial Intelligence  
-
----
-
+Coursework: Coursework 2
